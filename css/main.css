@@ -1,0 +1,27 @@
+@import "dark.css" (prefers-color-scheme: dark);
+@import "light.css" (prefers-color-scheme: light);
+
+h1, h2, h3, p, li { font-family: Georgia, serif }
+a:link { text-decoration: none}
+/* a:visited {  } */
+a:hover { font-weight: bold; text-decoration: underline }
+a:active { font-weight: bolder }
+p { text-align: justify }
+
+@media only screen and (max-width: 440px) {
+    h1, h2, h3, p, li { margin-left: 1em; margin-right: 1em }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 1080px) {
+    h1, h2, h3, p { margin-left: 40%; margin-right: 25% }
+    li { margin-left: 40%; margin-right: 25% }
+}
+
+/* @media only print {
+    h1, h2, h3 { text-shadow: none; box-shadow: none; animation: none; background: initial; background-color: #8080ff }
+    li a[href^="http"]:after { content: " <" attr(href) ">"; font-family: "Courier New", monospace}
+} */
+
